@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bk">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.changdi.pm25check.view.DashboardView3
+                android:id="@+id/dashboard_view_pm2d5"
+                android:paddingRight="1dp"
+                android:paddingLeft="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+            <com.changdi.pm25check.view.DashboardView3
+                android:id="@+id/dashboard_view_pm10"
+                android:paddingRight="1dp"
+                android:paddingLeft="1dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+                <Button
+                    android:text="@string/sharewep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/sharewep" />
+                <Button
+                    android:text="@string/sharezone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/sharezone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
